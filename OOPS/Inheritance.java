@@ -33,7 +33,9 @@ class Inheritance {
         dog1.bark();                    // dog and fish -> child class
         Fish fish1 = new Fish();        // inherit eat method from parent
         fish1.swim();
-        
 
+        // why fish cannot extend two classes
+        //      -> Ambiguity problem
+        
     }    
 }
