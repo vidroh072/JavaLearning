@@ -29,7 +29,7 @@ public class Main {
             System.out.println("No Data Available!!");
             return;
         }
-        System.out.println(" ------ Student Management System ------");
+        System.out.println("\n ------ Student Management System ------");
         System.out.println("| 1. View CGPA");
         System.out.println("| 0. back");
         System.out.print(" ----> ");
@@ -62,8 +62,8 @@ public class Main {
                 return;
             }
             
-            System.out.println("ROll NOT FOUND...");
         }
+        System.out.println("ROll NOT FOUND...");
     }
     public static void teacher(){
         boolean isRunning = true;
@@ -194,14 +194,16 @@ public class Main {
     System.out.println("\n----- Enter New CGPA -----");
     System.out.println(" ----> ");
     double cgpa = sc.nextDouble();
+    sc.nextLine();
     cgpaData[index] = cgpa;
     System.out.println("CGPA Successfully Changed....");
 }
 
     public static void deleteStudent(){
         System.out.println("\n----- DELETE STUDENT WINDOW-----");
-        System.out.println(" ----> ");
+        System.out.print(" ----> ");
         int roll = sc.nextInt();
+        sc.nextLine();
         for (int i = 0; i < rollData.length; i++) {
             if (rollData[i]==roll) {
                 rollData[i] = 0;
